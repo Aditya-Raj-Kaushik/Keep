@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Create from "./Create";
 import Footer from "./Footer";
 import Note from "./Note";
 import notes from "./notes";
@@ -9,6 +10,7 @@ import notes from "./notes";
 function App(){
     return <div>
         <Header></Header>
+        <Create/>
         {notes.map((noteItem)=>
      <Note
         key={noteItem.key}
